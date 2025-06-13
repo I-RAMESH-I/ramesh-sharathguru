@@ -1,200 +1,353 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>my-portfolio</title>
-<!--    flowbite - UI -->
+    <!--    flowbite - UI -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-<!-- tailwind css -->
+    <!--    end of flowbite - UI -->
+    <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- end of tailwind css -->
 </head>
-<body class="bg-gray-50 dark:bg-gray-900"   >
-<nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"> Ramesh Sharathguru</span>
-        </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> Get in touch </button>
-            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                <span class="sr-only">open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 13h15"/>
-            </svg>
-            </button>
-        </div>
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-grey-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li><a href="#home" class="block py-2 px-3 text-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"> Home </a></li>
-                <li><a href="#about" class="block py-2 px-3 text-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"> About </a></li>
-                <li><a href="#projects" class="block py-2 px-3 text-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"> Projects </a></li>
-                <li><a href="#contact" class="block py-2 px-3 text-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"> Contact </a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
-<!-- Hero section -->
-<section id="home" class="bg-white dark:bg-gray-900 pt-20">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-        <div class="mx-auto mb-4 w-32 h-32 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
-            <span class="text-white text-4xl font-bold">YN</span>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <nav
+        class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"> Ramesh
+                    Sharathguru</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Get in touch </button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewbox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-grey-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li><a href="#home"
+                            class="block py-2 px-3 text-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+                            Home </a></li>
+                    <li><a href="#about"
+                            class="block py-2 px-3 text-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+                            About </a></li>
+                    <li><a href="#projects"
+                            class="block py-2 px-3 text-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+                            Projects </a></li>
+                    <li><a href="#contact"
+                            class="block py-2 px-3 text-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">
+                            Contact </a></li>
+                </ul>
+            </div>
         </div>
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Hello, I'm Ramesh Sharathguru</h1>
-        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"> Full Stack Developer passionate about creating beatuiful and functional web applications. I specialize in modern web technologies and user experience design.</p>
-        <div class="flex flec-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-            <a href="#projects" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"> -- VIEW -- my work <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293A1 1 0 011.414 016 6a1 1 0 010 1.4141-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.5861-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"> </path> </svg> </a>
+    </nav>
 
-            <a href="#contact" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"> Get In Touch <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293A1 1 0 011.414 016 6a1 1 0 010 1.4141-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.5861-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"> </path> </svg> </a>
+    <!-- Hero section -->
+    <section id="home" class="bg-white dark:bg-gray-900 pt-20">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+            <div
+                class="mx-auto mb-4 w-32 h-32 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
+                <span class="text-white text-4xl font-bold">YN</span>
+            </div>
+            <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                Hello, I'm Ramesh Sharathguru</h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"> Full
+                Stack Developer passionate about creating beatuiful and functional web applications. I specialize in
+                modern web technologies and user experience design.</p>
+            <div class="flex flec-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                <a href="#projects"
+                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    -- VIEW -- my work <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293A1 1 0 011.414 016 6a1 1 0 010 1.4141-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.5861-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"> </path>
+                    </svg> </a>
 
+                <a href="#contact"
+                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    Get In Touch <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293A1 1 0 011.414 016 6a1 1 0 010 1.4141-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.5861-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"> </path>
+                    </svg> </a>
+
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- About Section -->
-<section id="about" class="bg-gray-50 dark:bg-gray-800">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"> About Me</h2>
-            <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"> Passionate developer with expertise in modern web technologies</p>
-        </div>
-        <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-            <div class="items-center bg-white rounded-lg shadow sm:flex dark:bg-gray-900 dark:border-gray-700">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white mb-2">
-                        Front-End Development
-                    </h3>
-                    <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"> Expert in Vue.js, and modern css framework. Creating responsive and interactive user interfaces. </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"> Vue.js </span>
+    <!-- About Section -->
+    <section id="about" class="bg-gray-50 dark:bg-gray-800">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"> About Me</h2>
+                <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"> Passionate developer with
+                    expertise in modern web technologies</p>
+            </div>
+            <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+                <div class="items-center bg-white rounded-lg shadow sm:flex dark:bg-gray-900 dark:border-gray-700">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white mb-2">
+                            Front-End Development
+                        </h3>
+                        <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"> Expert in Vue.js, and modern
+                            css framework. Creating responsive and interactive user interfaces. </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
+                                Vue.js </span>
 
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300"> Tailwind CSS </span>
+                            <span
+                                class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">
+                                Tailwind CSS </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-center bg-white rounded-lg shadow sm:flex dark:bg-gray-900 dark:border-gray-700">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white mb-2"> Backend
+                            Development</h3>
+                        <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"> Proficient in Python and
+                            database design. Building scalable and secure server-side application</p>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
+                                Python </span>
+
+                            <span
+                                class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">
+                                MongoDB </span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="items-center bg-white rounded-lg shadow sm:flex dark:bg-gray-900 dark:border-gray-700">
-                <div class="p-5">
-                    <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white mb-2"> Backend Development</h3>
-                    <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"> Proficient in Python and database design. Building scalable and secure server-side application</p>
+        </div>
+    </section>
 
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"> Python </span>
+    <!-- project section -->
+    <section id="projects" class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto mx-w-screen-sm text-center mb-8 lg:mb-16">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"> Feature Projects
+                </h2>
+                <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"> my personal projects </p>
+            </div>
+            <div class="grid gap-8 lg:grid-cols-3">
 
-                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300"> MongoDB </span>
+                <!-- project 1 -->
+                <article
+                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-5 text-gray-500">
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                            <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0  20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm66H5v2h6v-2z"
+                                    clip-rule="evenodd"></path>
+                                <path
+                                    d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm66H5v2h6v-2z">
+                                </path>
+
+                            </svg>
+                            Web App
+                        </span>
                     </div>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> project plaform
+                    </h2>
+                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400"> A full stack project build with Vue.js,
+                        featuring 'user auth', 'payment processing' and 'inventory management' </p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <a href="#"
+                                class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                                Live Demo
+                                <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.293 3.293a1 1 0 011.414 016 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.5861-4.293-4.293-4.293a1 0 010-1.414z"
+                                        clip-rule="evenodd"> </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!--project 2 -->
+
+                <article
+                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-5 text-gray-500">
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                            <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0  20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm66H5v2h6v-2z"
+                                    clip-rule="evenodd"></path>
+                                <path
+                                    d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm66H5v2h6v-2z">
+                                </path>
+
+                            </svg>
+                            Web App
+                        </span>
+                    </div>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> project plaform
+                    </h2>
+                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400"> A full stack project build with Vue.js,
+                        featuring 'user auth', 'payment processing' and 'inventory management' </p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <a href="#"
+                                class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                                Live Demo
+                                <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.293 3.293a1 1 0 011.414 016 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.5861-4.293-4.293-4.293a1 0 010-1.414z"
+                                        clip-rule="evenodd"> </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!--            project 3 -->
+                <article
+                    class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-5 text-gray-500">
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                            <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0  20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm66H5v2h6v-2z"
+                                    clip-rule="evenodd"></path>
+                                <path
+                                    d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm66H5v2h6v-2z">
+                                </path>
+
+                            </svg>
+                            Web App
+                        </span>
+                    </div>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> project plaform
+                    </h2>
+                    <p class="mb-5 font-light text-gray-500 dark:text-gray-400"> A full stack project build with Vue.js,
+                        featuring 'user auth', 'payment processing' and 'inventory management' </p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <a href="#"
+                                class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                                Live Demo
+                                <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.293 3.293a1 1 0 011.414 016 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.5861-4.293-4.293-4.293a1 0 010-1.414z"
+                                        clip-rule="evenodd"> </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact section -->
+
+    <section id="contact" class="bg-gray-50 drak:bg-gray-800">
+        <div class="py-8px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"> Contact Me </h2>
+                <p class="mb-8 lg:mb-16 font-light text-gray-500 dark:text-gray-400 sm:text-xl"> Let's discuss
+                    projects.,</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Let's Connect</h3>
+                    <p> Get inn touch with social media updates, projects and professional insights. </p>
+                </div>
+
+                <div class="social-links">
+
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/" class="social-link" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <!-- GitHub -->
+                    <a href="https://github.com/I-RAMESH-I" class="social-link" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <!-- twitter  -->
+                    <a href="https://linkedin.com/" class="social-link" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                        </svg>
+                    </a>
+
+                    <!-- YouTube  -->
+                    <a href="https://youtube.com/" class="social-link" target="_blank" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+
+                    <!-- Mail to -->
+                    <a href="mailto:gurusince92@gmail.com" class="social-link" target="_blank" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.615L12 9.909l9.749-6.088h.615c.904 0 1.636.732 1.636 1.636z" />
+                        </svg>
+                    </a>
+
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- project section -->
-<section id="projects" class="bg-white dark:bg-gray-900">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto mx-w-screen-sm text-center mb-8 lg:mb-16">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"> Feature Projects</h2>
-            <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"> my personal projects </p>
-        </div>
-        <div class="grid gap-8 lg:grid-cols-3">
-
-            <!-- project 1 -->
-            <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <div class="flex justify-between items-center mb-5 text-gray-500">
-                    <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-                        <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0  20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm66H5v2h6v-2z" clip-rule="evenodd"></path>
-                            <path d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm66H5v2h6v-2z" ></path>
-
-                        </svg>
-                        Web App
-                    </span>
-                </div>
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> project plaform </h2>
-                <p class="mb-5 font-light text-gray-500 dark:text-gray-400"> A full stack project build with Vue.js, featuring 'user auth', 'payment processing' and 'inventory management' </p>
-                <div class="flex justify-between items-center">
-                    <div class="flex items-center space-x-4">
-                        <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
-                            Live Demo
-                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.293 3.293a1 1 0 011.414 016 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.5861-4.293-4.293-4.293a1 0 010-1.414z" clip-rule="evenodd"> </path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!--project 2 -->
-
-            <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <div class="flex justify-between items-center mb-5 text-gray-500">
-                    <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-                        <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0  20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm66H5v2h6v-2z" clip-rule="evenodd"></path>
-                            <path d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm66H5v2h6v-2z" ></path>
-
-                        </svg>
-                        Web App
-                    </span>
-                </div>
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> project plaform </h2>
-                <p class="mb-5 font-light text-gray-500 dark:text-gray-400"> A full stack project build with Vue.js, featuring 'user auth', 'payment processing' and 'inventory management' </p>
-                <div class="flex justify-between items-center">
-                    <div class="flex items-center space-x-4">
-                        <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
-                            Live Demo
-                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.293 3.293a1 1 0 011.414 016 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.5861-4.293-4.293-4.293a1 0 010-1.414z" clip-rule="evenodd"> </path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </article>
+    </footer>
 
 
-            <!--            project 3 -->
-            <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <div class="flex justify-between items-center mb-5 text-gray-500">
-                    <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
-                        <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0  20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm66H5v2h6v-2z" clip-rule="evenodd"></path>
-                            <path d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm66H5v2h6v-2z" ></path>
 
-                        </svg>
-                        Web App
-                    </span>
-                </div>
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> project plaform </h2>
-                <p class="mb-5 font-light text-gray-500 dark:text-gray-400"> A full stack project build with Vue.js, featuring 'user auth', 'payment processing' and 'inventory management' </p>
-                <div class="flex justify-between items-center">
-                    <div class="flex items-center space-x-4">
-                        <a href="#" class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
-                            Live Demo
-                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.293 3.293a1 1 0 011.414 016 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.5861-4.293-4.293-4.293a1 0 010-1.414z" clip-rule="evenodd"> </path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
-
-
-<!-- contact section -->
-
-<section id="contact" class="bg-gray-50 drak:bg-gray-800" >
-    <div class="py-8px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-16">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"> Contact Me </h2>
-            <p class="mb-8 lg:mb-16 font-light text-gray-500 dark:text-gray-400 sm:text-xl"> Let's discuss projects.,</p>
-        </div>
-    </div>
-</section>
 
 </body>
+
 </html>
