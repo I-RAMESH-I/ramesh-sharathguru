@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Portfolio-Gallery</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 
     <style>
@@ -155,33 +155,72 @@ html {
     visibility: visible;
     z-index: 10;
 }
+
+        .slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.slide-container .prev {
+  left: 2px;
+}
+
+.slide-container .next {
+  right: 2px;
+}
+
+
     </style>
 
 </head>
-<body >
+<body>
 
-<ul class="slider">
-    <li>
-        <input type="radio" id="slide1" name="slide" checked>
-        <label for="slide1"></label>
-        <img src="./templates/images/gallery/IMG_1%20(11).jpg" alt="Panel 1">
-    </li>
-    <li>
-        <input type="radio" id="slide2" name="slide">
-        <label for="slide2"></label>
-       <img src="./templates/images/gallery/IMG_1%20(1).jpg" alt="Panel 2">
-    </li>
-    <li>
-        <input type="radio" id="slide3" name="slide">
-        <label for="slide3"></label>
-        <img src="./templates/images/gallery/IMG_1%20(6).jpg" alt="Panel 3">
-    </li>
-    <li>
-        <input type="radio" id="slide4" name="slide">
-        <label for="slide4"></label>
-        <img src="./templates/images/gallery/IMG_1%20(7).jpg" alt="Panel 4">
-    </li>
-</ul>
+<div>
+    <ul class="slider">
+        <li>
+            <input type="radio" id="slide1" name="slide" checked>
+            <label for="slide1"></label>
+            <img src="./templates/images/gallery/IMG_1%20(11).jpg" alt="Panel 1">
+        </li>
+        <li>
+            <input type="radio" id="slide2" name="slide">
+            <label for="slide2"></label>
+            <img src="./templates/images/gallery/IMG_1%20(1).jpg" alt="Panel 2">
+        </li>
+        <li>
+            <input type="radio" id="slide3" name="slide">
+            <label for="slide3"></label>
+            <img src="./templates/images/gallery/IMG_1%20(6).jpg" alt="Panel 3">
+        </li>
+        <li>
+            <input type="radio" id="slide4" name="slide">
+            <label for="slide4"></label>
+            <img src="./templates/images/gallery/IMG_1%20(7).jpg" alt="Panel 4">
+        </li>
+
+        <a href="#" class="prev" title="Previous">&#10094</a>
+        <a href="#" class="next" title="Next">&#10095</a>
+    </ul>
+
+</div>
+
 
 <!-- Images from Craig Henry's Dribbble profile: http://dribbble.com/craighenry -->
 </body>
