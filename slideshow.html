@@ -120,18 +120,29 @@
                     </div>
                 </div>
 
-<!--                &lt;!&ndash; Slide Indicators &ndash;&gt;-->
-<!--                <div class="flex justify-center space-x-3 py-6 bg-gray-50">-->
-<!--                    <button class="indicator w-3 h-3 rounded-full bg-gray-300 active" data-slide="0"></button>-->
-<!--                    <button class="indicator w-3 h-3 rounded-full bg-gray-300" data-slide="1"></button>-->
-<!--                    <button class="indicator w-3 h-3 rounded-full bg-gray-300" data-slide="2"></button>-->
-<!--                    <button class="indicator w-3 h-3 rounded-full bg-gray-300" data-slide="3"></button>-->
-<!--                    <button class="indicator w-3 h-3 rounded-full bg-gray-300" data-slide="4"></button>-->
-<!--                    <button class="indicator w-3 h-3 rounded-full bg-gray-300" data-slide="5"></button>-->
-<!--                </div>-->
+                <!-- Slide Indicators -->
+                <div class="flex justify-center space-x-3 py-6 bg-gray-50">
+                    <button class="indicator w-3 h-3 rounded-full bg-gray-300 active" data-slide="0"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-gray-300" data-slide="1"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-gray-300" data-slide="2"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-gray-300" data-slide="3"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-gray-300" data-slide="4"></button>
+                    <button class="indicator w-3 h-3 rounded-full bg-gray-300" data-slide="5"></button>
+                </div>
             </div>
 
-
+            <!-- Image Upload Section -->
+            <div class="mt-8">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">🔧 Replace Images</h3>
+                    <div class="border-2 border-dashed border-blue-300 rounded-lg p-8 text-center bg-blue-50 hover:bg-blue-100 transition-colors cursor-pointer" id="uploadArea">
+                        <div class="text-blue-500 text-4xl mb-4">📁</div>
+                        <p class="text-gray-700 font-medium mb-2">Drop your images here or click to browse</p>
+                        <p class="text-gray-500 text-sm">Supports JPG, PNG, GIF • Select up to 6 images</p>
+                        <input type="file" id="fileInput" class="hidden" multiple accept="image/*" max="6">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Controls Info -->
